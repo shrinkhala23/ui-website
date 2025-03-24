@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ body{
+    background-image: url(./background-image.png);
+    background-position: bottom;
+    height: 100vh;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    margin: auto;
+ }
+ .main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    height: 10vh;
+ }
+ .main  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    align-items: center;
+    padding: 10px 0px;
+    height: 10vh;
+ }
+ .main  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    align-items: center;
+ }
+ .main a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #010101;
+    font-size: 15px;
+    
+}
+
+
+
+.nav-button{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    font-weight: bold;
+}
+.nav-button >button{
+    padding: 8px 15px;
+    border: none;
+    color: #ffffff;
+    background-color: #ED017F;
+    border-radius: 5px;
+}
+.main-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 7%;
+    height: 88vh;
+}
+
+.main-hero-left{
+    position:absolute;
+    width: 35%;
+    margin-right: 40%;
+   
+}
+
+.main-hero-left h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+  
+    
+}
+button{
+    margin-top: 10px;
+}
+.vl{
+    border-left: 6px solid black;
+    height: 1px;
+    gap: 1px;
+}
+.cta-one{
+    padding: 10px 20px;
+    background-color: #ED017F;
+    color: #ffffff;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cta-two{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #ED017F;
+    border:  1px solid #ED017F;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-left: 10px;
+    bottom: -120px;
+}
+.contact-one{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-two ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.main-right-hero{
+    position: relative;
+    width: 65%;
+   
+}
+
+
+.home-loans {
+    position: absolute;
+    border: 1px solid rgb(255, 0, 183);
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 50px;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 30px;
+    left: 200%;
+    bottom: 70%;
+    background-color: #ffffff;
+    color: #ED017F;
+    border: none;
+    box-shadow: 10px 10px 50px grey;
+    cursor: pointer;
+}
+.main-hero-poster img{
+    
+        width: 100%;
+        
+}
+@media screen and (max-width: 768px) {
+    body {
+        background-position: center;
+    }
+    .main-content {
+        padding-top: 10%;
+        flex-direction: column-reverse;
+        gap: 10px;
+        margin: 0 10%;
+    }
+}
+.main-hero-right {
+    width: 100%
+}
+.main-hero-left {
+    width: 100%;
+  text-align: center;
+  
+}
+.contact {
+  
+    width: 100%;
+    justify-content: center;    
+}
+.car-loans {
+    top: 0;
+    left: 5%;
+}
+.home-loans {
+    right: 0;
+}
+.nav-menu {
+    display: none;
+   
+}
+@media screen and (max-width: 425px) {
+
+    .car-loans {
+        left: -10px;
+        width: 95px;
+    }
+    .home-loans {
+        width: 110px;
+        right: -25px;
+    }
+   
+}
